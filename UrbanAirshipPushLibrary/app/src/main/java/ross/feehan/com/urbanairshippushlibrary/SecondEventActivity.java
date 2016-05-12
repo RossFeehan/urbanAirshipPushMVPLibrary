@@ -1,18 +1,15 @@
-package ross.feehan.com.urbanairshippushlibrary;
+package ross.feehan.com.urbanairshippushlibrary; /*
+ * Created by Ross Feehan on 12/05/2016.
+ */
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
+public class SecondEventActivity extends AppCompatActivity {
 
     @Bind(R.id.toolbar) Toolbar toolbar;
 
@@ -24,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupUI() {
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.second_event_layout);
         ButterKnife.bind(this);
         setupToolbar();
     }
@@ -32,4 +29,5 @@ public class MainActivity extends AppCompatActivity {
     private void setupToolbar() {
         setSupportActionBar(toolbar);
     }
+
 }

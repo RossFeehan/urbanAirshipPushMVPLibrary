@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Urban Airship Push Library</string>
     <string name="action_settings">Settings</string>
+
+    <string name="defaultActivity">DEFAULT ACTIVITY</string>
+    <string name="firstEventActivity">FIRST EVENT ACTIVITY</string>
+    <string name="secondEventActivity">SECOND EVENT ACTIVITY</string>
 </resources>
