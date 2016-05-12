@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import ross.feehan.com.urbanairshippushlibrary.RegisterForPush.RegisterForPush;
 
 public class FirstEventActivity extends AppCompatActivity {
 

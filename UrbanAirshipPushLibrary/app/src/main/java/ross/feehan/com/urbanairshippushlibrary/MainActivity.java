@@ -1,16 +1,14 @@
 package ross.feehan.com.urbanairshippushlibrary;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
+
+import javax.inject.Inject;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import ross.feehan.com.urbanairshippushlibrary.RegisterForPush.RegisterForPush;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setupUI();
+        registerForPush();
     }
 
     private void setupUI() {
@@ -31,5 +30,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupToolbar() {
         setSupportActionBar(toolbar);
+    }
+
+    private void registerForPush() {
+        RegisterForPush registerForPush = new RegisterForPush(getApplication());
+        registerForPush.registerForPushNotifications();
     }
 }
